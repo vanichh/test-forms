@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,mBAAO,CAAA;EACL,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "../group-header.scss"
+    ],
+    "names": [],
+    "file": "group-header.css"
+}

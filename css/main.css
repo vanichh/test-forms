@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.header {
+  width: 100%;
+}
+
+.header__menu {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  background-image: url("../img/burger-button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 18px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 27px;
+}
+
+.header__icon {
+  height: 10.5px;
+  width: 10.5px;
+  margin-left: auto;
+}
+
+.header__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: var(--color-blue);
+  margin-right: 44px;
+  margin-left: 11.75px;
+}
+
+.header__bread-rumbs {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  margin-left: 67px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.list-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.list-header__icon {
+  height: 29.33px;
+  width: 26.67px;
+  margin-right: 18.67px;
+  margin-left: 69.67px;
+}
+
+.list-header__h1 {
+  margin: 0;
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.group-header {
+  margin-top: 42px;
+}
+
+.group-header__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.group-header__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-black__secondary);
+  margin: 0;
+  margin-right: 24px;
+  padding-bottom: 8px;
+}
+
+.activ {
+  color: var(--color-black__main);
+  border-bottom: 2px solid var(--color-blue);
+}
+
+:root {
+  --color-blue: #1071FF;
+  --color-black__main: rgba(0, 0, 0, 0.87);
+  --color-black__secondary: rgba(0, 0, 0, 0.54);
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1280px;
+}
+/*# sourceMappingURL=main.css.map */
