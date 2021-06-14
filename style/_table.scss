@@ -1,0 +1,53 @@
+%text-table {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: var(--color-black__secondary);
+}
+
+.table {
+  &__row {
+    display: flex;
+    padding: 14px 0;
+  }
+}
+
+.column-date {
+  @extend %text-table;
+  width: 86px;
+  margin-right: 24px;
+}
+
+.column-name {
+  @extend %text-table;
+  width: 546px;
+  margin-left: 30px;
+}
+
+.column-player {
+  @extend %text-table;
+  width: 104px;
+}
+
+.column-coach {
+  @extend %text-table;
+  width: 40px;
+  margin-right: 92px;
+}
+
+.column-progress {
+  display: flex;
+  align-items: baseline;
+
+  &__text {
+    margin-right: 6.5px;
+    @extend %text-table;
+  }
+
+  &__img {
+    height: 5px;
+    width: 8px;
+  }
+}

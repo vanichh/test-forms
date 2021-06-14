@@ -1,12 +1,16 @@
 @import 'header';
 @import 'list-header';
 @import 'group-header';
+@import 'header-sorting';
+@import 'header-setting';
+@import 'table';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root{
   --color-blue: #1071FF;
   --color-black__main: rgba(0, 0, 0, 0.87);
   --color-black__secondary: rgba(0, 0, 0, 0.54);
+  --color-gray: rgba(0, 0, 0, 0.08);
 }
 
 

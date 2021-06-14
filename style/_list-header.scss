@@ -1,12 +1,13 @@
 .list-header {
   display: flex;
   align-items: baseline;
+  margin-left: 70px;
 
   &__icon {
     height: 29.33px;
     width: 26.67px;
     margin-right: 18.67px;
-    margin-left: 69.67px;
+    
   }
 
   &__h1 {

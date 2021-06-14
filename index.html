@@ -33,24 +33,61 @@
             <li class="group-header__item">Индивидуальное</li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li><input type="search"></li>
-            <li>
-              <select>
-                <option>Все</option>
-                <option>Пункт 2</option>
-              </select>
-            </li>
-            <li>
-              <input type="date"></li>
-            <li>
-              <select>
-                <option>Все</option>
-                <option>Пункт 2</option>
-              </select>
-            </li>
-          </ul>
+        <div class='header-sorting'>
+          <label class="header-sorting__label">
+            <input class="header-sorting__search input" placeholder="Поиск" type="search">
+          </label>
+          <label class="header-sorting__label">
+            <p class="header-sorting__name">Программа</p>
+            <select class="header-sorting__program input">
+              <option>Все</option>
+              <option>Пункт 2</option>
+            </select>
+          </label>
+          <label class="header-sorting__label">
+            <p class="header-sorting__name">Период</p>
+            <input class="header-sorting__date input" type="date">
+          </label>
+          <label class="header-sorting__label">
+            <p class="header-sorting__name">Статус</p>
+            <select class="header-sorting__status input">
+              <option>Все</option>
+              <option>Пункт 2</option>
+            </select>
+          </label>
+        </div>
+        <div class="header-setting">
+          <p class="header-setting__text">34 сессии</p>
+          <div class="setting-filter">
+            <img class="setting-filter__img" src="img/icon-setting.svg">
+            <p class="setting-filter__text">Настроить фильтр</p>
+          </div>
+          <div class="setting-close">
+            <img class="setting-close__img" src=" img/icon-close.svg">
+            <P class="setting-close__text">Сбросить</P>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="table">
+          <div class="table__row">
+            <p class="column-date">Дата начала</p>
+            <p class="column-name">Название</p>
+            <p class="column-player">Участников</p>
+            <p class="column-coach">Тренер</p>
+            <div class="column-progress">
+              <p class="column-progress__text">Прогресс</p>
+              <img class="column-progress__img" src="/img/table/icon-1.svg">
+            </div>
+          </div>
+          <div class="table__row">
+            <p class="column-date">23 дек, 9:00</p>
+            <p class="column-name">Страхование с заботой о клиенте</p>
+            <p class="column-player">12</p>
+            <p class="column-coach"><img></p>
+            <p class="column-progress__text">Прогресс</p>
+            <img class="column-progress__img" src="/img/table/icon-1.svg">
+          </div>
         </div>
       </section>
     </main>
