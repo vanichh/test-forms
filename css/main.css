@@ -69,13 +69,15 @@
 
 .group-header {
   margin-top: 42px;
+  margin-left: 67px;
+  margin-right: 67px;
 }
 
 .group-header__list {
   display: flex;
   list-style-type: none;
   margin: 0;
-  margin-left: 67px;
+  margin-left: 8px;
   padding: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding-inline-start: 0;
@@ -103,6 +105,7 @@
   display: flex;
   margin-top: 56px;
   margin-left: 67px;
+  margin-right: 67px;
   margin-bottom: 36px;
 }
 
@@ -111,6 +114,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 166px;
 }
 
 .header-sorting__name {
@@ -131,6 +135,7 @@
   box-sizing: border-box;
   padding-left: 20px;
   padding-bottom: 7px;
+  margin-left: 8px;
 }
 
 .header-sorting__status {
@@ -145,7 +150,7 @@
   font-size: 12px;
   line-height: 16px;
   height: 23px;
-  width: 166px;
+  width: 100%;
 }
 
 .header-setting__text, .header-setting .setting-filter__text, .header-setting .setting-close__text {
@@ -159,13 +164,16 @@
 .header-setting {
   display: flex;
   align-items: center;
+  margin-bottom: 69px;
+  margin-left: 67px;
+  margin-right: 67px;
 }
 
 .header-setting__text {
   padding: 0;
   color: var(--color-black__secondary);
-  margin-left: 67px;
   margin-right: 95px;
+  margin-left: 8px;
 }
 
 .header-setting .setting-filter {
@@ -206,12 +214,48 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+}
+
+.table {
+  margin-left: 67px;
+  margin-right: 67px;
+}
+
+.table__menu {
+  position: absolute;
+  top: -90px;
+  right: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  padding: 18px 16px;
+  visibility: hidden;
+}
+
+.table__header {
+  display: flex;
+  padding: 14px 8px;
   color: var(--color-black__secondary);
+  align-items: center;
+  height: 20px;
 }
 
 .table__row {
+  position: relative;
   display: flex;
-  padding: 14px 0;
+  padding: 12px 8px;
+  color: var(--color-black__main);
+  align-items: center;
+  height: 20px;
+}
+
+.table__row:hover {
+  background-color: #F6F6F6;
+  border-radius: 4px;
+}
+
+.table__row:hover .column__menu {
+  visibility: visible;
 }
 
 .column-date {
@@ -229,22 +273,94 @@
 }
 
 .column-coach {
-  width: 40px;
-  margin-right: 92px;
+  width: 132px;
+}
+
+.column-coach__img {
+  height: 20px;
+  width: 20px;
 }
 
 .column-progress {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .column-progress__text {
   margin-right: 6.5px;
+  width: 63px;
+}
+
+.column-progress__img-hedder {
+  height: 5px;
+  width: 8px;
 }
 
 .column-progress__img {
-  height: 5px;
-  width: 8px;
+  height: 14px;
+  width: 14px;
+  margin-right: 7px;
+}
+
+.column__menu {
+  visibility: hidden;
+  height: 32px;
+  width: 32px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.column__menu:hover {
+  background-color: #D4D4D4;
+  cursor: pointer;
+}
+
+.editing {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.editing__img {
+  height: 14px;
+  width: 16px;
+  margin-right: 16px;
+}
+
+.editing__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.editing__text:hover {
+  cursor: pointer;
+}
+
+.delete {
+  display: flex;
+}
+
+.delete__img {
+  height: 16px;
+  width: 12px;
+  margin-right: 20px;
+}
+
+.delete__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.delete__text:hover {
+  cursor: pointer;
 }
 
 :root {

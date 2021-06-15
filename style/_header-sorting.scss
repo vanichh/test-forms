@@ -2,13 +2,15 @@
   display: flex;
   margin-top: 56px;
   margin-left: 67px;
+  margin-right: 67px;
   margin-bottom: 36px;
 
   &__label {
     margin-right: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
+    width: 166px;
   }
 
   &__name {
@@ -29,6 +31,7 @@
     box-sizing: border-box;
     padding-left: 20px;
     padding-bottom: 7px;
+    margin-left: 8px;
   }
 
   &__status {
@@ -44,5 +47,5 @@
   font-size: 12px;
   line-height: 16px;
   height: 23px;
-  width: 166px;
+  width: 100%;
 }

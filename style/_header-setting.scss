@@ -9,13 +9,16 @@
 .header-setting {
   display: flex;
   align-items: center;
+  margin-bottom: 69px;
+  margin-left: 67px;
+  margin-right: 67px;
 
   &__text {
     padding: 0;
     color: var(--color-black__secondary);
     @extend %text;
-    margin-left: 67px;
     margin-right: 95px;
+    margin-left: 8px;
   }
 
   .setting-filter {

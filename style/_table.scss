@@ -4,13 +4,48 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
-  color: var(--color-black__secondary);
 }
 
 .table {
-  &__row {
+  margin-left: 67px;
+  margin-right: 67px;
+
+  &__menu {
+    position: absolute;
+    top: -90px;
+    right: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding: 18px 16px;
+    visibility: hidden;
+  }
+
+  &__header {
     display: flex;
-    padding: 14px 0;
+    padding: 14px 8px;
+    color: var(--color-black__secondary);
+    align-items: center;
+    height: 20px;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    padding: 12px 8px;
+    color: var(--color-black__main);
+    align-items: center;
+    height: 20px;
+
+    &:hover {
+      background-color: #F6F6F6;
+      border-radius: 4px;
+    }
+
+    &:hover .column__menu {
+      visibility: visible;
+    }
+
   }
 }
 
@@ -33,21 +68,94 @@
 
 .column-coach {
   @extend %text-table;
-  width: 40px;
-  margin-right: 92px;
+  width: 132px;
+  &__img {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .column-progress {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   &__text {
     margin-right: 6.5px;
     @extend %text-table;
+    width: 63px;
+  }
+
+  &__img-hedder {
+    height: 5px;
+    width: 8px;
   }
 
   &__img {
-    height: 5px;
-    width: 8px;
+    height: 14px;
+    width: 14px;
+    margin-right: 7px;
+  }
+}
+
+.column__menu {
+  visibility: hidden;
+  height: 32px;
+  width: 32px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #D4D4D4;
+    cursor: pointer;
+  }
+}
+
+.editing {
+  display: flex;
+  margin-bottom: 20px;
+
+  &__img {
+    height: 14px;
+    width: 16px;
+    margin-right: 16px;
+
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.delete {
+  display: flex;
+
+  &__img {
+    height: 16px;
+    width: 12px;
+    margin-right: 20px;
+
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

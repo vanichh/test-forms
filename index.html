@@ -70,28 +70,47 @@
       </section>
       <section>
         <div class="table">
-          <div class="table__row">
+          <div class="table__header">
             <p class="column-date">Дата начала</p>
             <p class="column-name">Название</p>
             <p class="column-player">Участников</p>
             <p class="column-coach">Тренер</p>
             <div class="column-progress">
               <p class="column-progress__text">Прогресс</p>
-              <img class="column-progress__img" src="/img/table/icon-1.svg">
+              <img class="column-progress__img-header" src="/img/table/icon-1.svg">
             </div>
           </div>
           <div class="table__row">
-            <p class="column-date">23 дек, 9:00</p>
+            <p class="column-date ">23 дек, 9:00</p>
             <p class="column-name">Страхование с заботой о клиенте</p>
             <p class="column-player">12</p>
-            <p class="column-coach"><img></p>
-            <p class="column-progress__text">Прогресс</p>
-            <img class="column-progress__img" src="/img/table/icon-1.svg">
+            <p class="column-coach">
+              <img class="column-coach__img">
+              <img class="column-coach__img">
+              <img class="column-coach__img">
+            </p>
+            <div class="column-progress">
+              <img class="column-progress__img " src="/img/table/icon.svg">
+              <p class="column-progress__text">86%</p>
+            </div>
+            <button class="column__menu">
+              <img src="img/table/icon_editing.svg" alt="">
+            </button>
+            <div class="table__menu">
+              <div class="editing">
+                <img class="editing__img" src="/img/table/Union.svg" alt="">
+                <p class="editing__text">Редактировать</p>
+              </div>
+              <div class="delete">
+                <img class="delete__img" src="img/table/Vector.svg" alt="">
+                <p class="delete__text">Удалить слот</p>
+              </div>
+            </div>
           </div>
-        </div>
       </section>
     </main>
   </div>
+  <script src="bild.js"></script>
 </body>
 
 </html>
